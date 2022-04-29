@@ -1,0 +1,10 @@
+How do I create a hidden file or folder? How do I display it in the CLI?
+touch file.name
+
+How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+mkdir -p /c/Users/myusername/these/folders/are/just/for/fun
+
+How do I append a message to a file, without a newline character?
+touch "first message" >> file.name $$ touch "second  message" >> file.name
+Or by using (vim)
+

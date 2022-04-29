@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+    min-width: 1000px;
+    background-color: #A68F97;
+    color: #b3cedf;
+}
+aside, .article-2{
+    width: 350px;
+    text-align: center;
+   
+}
+aside, .article-2, .article-1, header, footer, header div, .cart{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #105762;
+
+}  
+img:hover{
+    transform: scale(1.5);
+}
+.info, .cart, .article-1{
+    transition: calc(1s);
+}
+.cart:hover, .article-1:hover{
+    transform: scale(1.3);
+    color: whitesmoke;
+    background-color: #01353e;
+}
+.info:hover{
+    transform: scale(1.15);
+    color: whitesmoke;
+    
+} 
+footer i:hover{
+    transform: scale(1.5);
+}
+a{
+    color:  #b3cedf;
+}
+section{
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+}
+header{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+header div{
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-family: monospace;
+    padding: 20px;
+}
+.main{
+     display: flex;
+}
+img{
+    height: 160px;
+    margin:0 auto;
+    padding: 0;
+    display: flex;
+    border-radius: 40px;
+    transition: calc(1s);
+}
+.info{
+    font-size: 0.8rem;
+    z-index: 100;
+}
+.info h3{
+    margin-bottom: 8px;
+}
+hr{
+    width: 75%;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #A68F97;
+}
+.cart{
+    height: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border:2px solid #01353e;
+}
+.edu-carts{
+    display: flex;
+    align-items: center;
+}
+.edu-1, .edu-2{
+    width: 145px;
+    font-size: 0.8rem;
+}
+.cart a{
+    display: block;
+    margin-bottom: 5px;
+}
+.cart h3{
+    margin-bottom: 5PX;
+}
+.edu-2{
+    margin-left: 20PX;
+}
+.article-1{
+    width: 450px;
+    margin: 0 25px;
+    padding-top: 20px;
+}
+h2{
+    text-align: center;
+}
+.article-1 section{
+    padding: 20px;
+    font-size:0.9rem;
+}
+.section-1{
+    height: 300px;
+    margin-top: 20px;
+}
+.section-2{
+    height: 230px;
+}
+.article-1 h3{
+    margin-bottom: 10px;
+}
+.article-1 h4, h5{
+    margin-bottom: 5px;
+} 
+.section-1 time{
+    font-size: 0.7rem;
+}
+.article-1 p{
+    margin-bottom: 10px;
+}
+.article-1 ul{
+    padding-left: 50px;
+    font-size: 0.8rem;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+   display: flex;
+   align-items: center;
+}
+footer div{
+    margin: 0 auto;
+}
+footer div i{
+    padding: 5px 70px;
+    font-size: 1.5rem;
+    transition: calc(0.7s);
+}
+.full{
+    color: beige;
+}
