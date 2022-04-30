@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: blueviolet;
+}
+h1, h2{
+   text-align: center;
+   padding: 5px 0;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.flexbox-section{
+    width: 100%;
+}
+.flexbox-list{ 
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+li{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+}
+.flexbox-list > li{
+   flex: 1 1 22%;
+   max-width: 250px ;
+   margin-bottom: 30px;
+   margin: 1%;    
+}
+.flexbox-item:nth-child(1){
+    min-width: 48%;
+}
+img{
+    width: 100%;
+}
+p{
+    font-size: 0.9rem;
+}
+.grid-section{
+    margin: 0;
+    padding: 0;
+}
+.grid-list{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    column-gap: 5px;
+    row-gap:20px;
+    padding: 0;
+    justify-content: space-evenly;
+}
+.grid-item{
+    min-width: 100%;
+}
+.grid-item:nth-child(1){
+    grid-column: 1 / 3;
+}
+@media screen and (max-width: 1024px) {
+    h3, p, img{
+        font-size: 0.9rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .flexbox-item{
+        flex:1 1 200px;
+        min-width: 30%;
+    }
+    .flexbox-item:nth-child(2){
+        flex: 2 1 48%;
+        max-width: 48%;
+    }
+    .flexbox-item:nth-child(1){
+        flex: 2 1 48%;
+        max-width: 48%;
+    } 
+    .grid-list{
+        grid-template-columns: repeat(3, 32%);
+        justify-content: space-between;
+    }
+    .grid-item:nth-child(2) h3{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width: 600px) {
+    h3, p, img{
+        font-size: 0.8rem;
+    }
+    H1, h2 {
+        font-size: 0.9rem;
+    }
+    img{
+        width: 80%;
+    }
+    .flexbox-list{
+        flex-direction: column;
+        align-items: center;
+        min-width: 100%;
+    }
+    .flexbox-item{
+        min-width: 90%;
+        flex: 1 1 1;
+    }
+    .grid-list{
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    .flexbox-item:nth-child(1){
+        min-width: 90%;  
+    }
+    .grid-item:nth-child(1){
+        grid-column: 1 / 2;
+    }
+}
