@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    background-color: #fdf0e5;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 403px;
+}
+/* --- header ---- */
+header{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.logo{
+    margin: 20px auto;
+    color: black; 
+    margin-top: 20px;
+    font-size: 0.5em;
+}
+.logo a,nav a {
+    text-decoration: none;
+    color: black; 
+}
+.logo-code{
+    border: 3px solid black;
+    padding: 1px 3px 1px 3px;
+}
+.logo-c{
+    text-decoration:  underline solid black 3px;
+    text-underline-position: under;
+    margin-left: 3px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.7em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex:4 1 300px;
+    justify-content: space-around;
+}
+li{
+    min-width: 70px;
+
+}
+nav div{
+    flex: 1 1 300px;
+    margin:20px auto;
+    display: flex;
+    justify-content:center ;
+    gap: 25px;
+}
+
+nav div a {
+    min-width: 50px;  
+}
+main{
+    width: 90%;
+    margin: auto;
+
+}
+/* --- section 1 + 2 ---- */
+.fierst-img{
+    text-align: center;
+    
+}
+.fierst-img img{
+    width: 80%;
+    box-shadow: -25px 25px;
+    margin-bottom: 80px;
+}
+
+p, h3{
+    font-size: 0.8rem;
+}
+aside{
+     width: 80%;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+h3{
+    margin: 30px 0 5px 0;
+}
+input{
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: 1px solid black;
+
+}
+button{
+    height: 40px;
+    width: 80px;
+    margin: 20px 0 40px 0;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #544af3;
+    border: none;
+    border-radius: 5px;
+}
+.social-media{
+    margin-top: 20px;
+}
+.social-media a{
+    border: 1px solid black;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    color: black;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+/* --- section 3 + 4 ---- */
+.article-2{
+ margin: 100px 0;
+width: 100%;
+padding: 30px 10%;
+background-color: #fcd333;
+}
+
+
+.scond-img{
+  text-align: center;
+  width: 100%;
+}
+.scond-img img{
+  max-width: 80%;
+}
+.help h2{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.help button{
+    width: 100px;
+}
+/* ---- footer ----*/
+/*
+footer{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+.list-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.about-contener ul, .projects-contener ul{
+    flex-direction: column;
+    line-height: 20px;
+    margin-top: 20px;
+
+}
+.about-contener ul a, .projects-contener ul a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.about-contener,.projects-contener {
+    flex: 1 1 50%;
+    text-align: center;
+
+}
+.logo p{
+    margin-top: 5px;
+}
+.projects-contener h3{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 1em;
+}
+footer p{
+    margin-top: 20px;
+}
+hr{
+    width: 60%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  
+    nav ul{
+        flex: 4;
+        margin-right: 30px;
+    }
+  
+    nav ul li{
+       min-width: 0;
+   }
+   nav{
+    flex-wrap: nowrap;
+   }
+   nav div{
+       margin: 0;
+       min-width: 0;
+       flex: 1;
+   }
+   .article-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .help{
+       padding-right: 20px;
+    }
+    .scond-img{
+        flex: 1;
+        text-align: center;
+    }
+    .scond-img img{
+      width: 100%;
+      margin-top: 20px;
+    }
+    .help{
+      flex: 2;
+    }
+}    
+@media screen and (min-width: 820px){
+    header{
+        margin-top:30px;
+        margin-bottom: 60px;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    h2{
+        text-align: left;
+    }
+    article, aside{
+        min-width: 40%;
+        flex: 1;
+    }
+    aside section{
+        max-width: 400px;
+    }
+    article{
+        flex: 1 1 40%;
+    }
+    .fierst-img img{
+        margin-bottom:0px;
+        max-width: 400px;
+        
+    }
+    form{
+        margin: 0;
+    }
+    input{
+        height: 30px;
+        max-width: 320px;
+    }
+    h3{
+        margin-top: 10px;
+    }
+    p, h3{
+        font-size: 0.9rem;
+    }
+    button{
+        height: 30px;
+        width: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .help{
+        flex: 1;
+        padding-right: 50px;
+        max-width: 500px;
+    }
+    .scond-img{
+        text-align: end;
+    }
+    .scond-img img{
+        max-width: 200px;
+       
+    }
+}
+@media screen and (min-width: 1024px){
+    header{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+
+    }
+    .logo{
+        font-size: 0.8em;
+
+    }
+   
+   
+    nav{
+
+        justify-content: space-between;
+        flex: 8;
+        font-size: 0.8em;
+    }
+    nav ul{
+        margin:0px 50px;
+        max-width: 500px;
+    }
+    header > div{
+        min-width: 0;
+        flex: 1;
+        justify-content: flex-start;
+    }
+    header nav div{
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+    aside section p{
+        margin: 10px 0 20px 0;
+        font-size: 0.8rem;
+        max-width: 350px;
+    }
+    .article-2{
+        padding: 0 20%;
+    }
+    
+
+}*/
